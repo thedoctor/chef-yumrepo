@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: yumrepo
-# Recipe:: remi 
+# Recipe:: remi
 #
 # Copyright 2012, Panagiotis Papadomitsos
 #
@@ -17,15 +17,9 @@
 # limitations under the License.
 #
 
-yum_key node['repo']['remi']['key'] do
-  url  node['repo']['remi']['key_url']
-  action :add
-end
-
 yum_repository "remi" do
   description "Les RPM de remi pour Enterprise Linux $releasever - $basearch"
-  key node['repo']['remi']['key']
-  url node['repo']['remi']['url']
-  mirrorlist true
+  gpgkey node['repo']['remi']['key_url']
+  mirrorlist node['repo']['remi']['url']
   action :add
 end

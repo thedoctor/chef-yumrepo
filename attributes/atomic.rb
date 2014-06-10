@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: yumrepo
-# Attributes:: atomic 
+# Attributes:: atomic
 #
 # Copyright 2012, Panagiotis Papadomitsos
 #
@@ -18,5 +18,5 @@
 #
 
 default['repo']['atomic']['url'] = "http://www.atomicorp.com/mirrorlist/atomic/centos-$releasever-$basearch"
-set['repo']['atomic']['key'] = "RPM-GPG-KEY.art"
-default['repo']['atomic']['key_url'] = "http://www.atomicorp.com/RPM-GPG-KEY.art.txt"
+default['repo']['atomic']['key_url'] = "https://www.atomicorp.com/RPM-GPG-KEY.atomicorp.txt"
+default['repo']['atomic']['key_url2'] = "https://www.atomicorp.com/RPM-GPG-KEY.art.txt"

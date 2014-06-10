@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: yumrepo
-# Recipe:: default 
+# Recipe:: default
 #
 # Copyright 2010, Eric G. Wolfe
 #
